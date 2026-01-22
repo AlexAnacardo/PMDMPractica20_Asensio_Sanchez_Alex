@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="generos">
+        <item>Action RPG</item>
+        <item>RPG</item>
+        <item>Plataformas</item>
+        <item>Estrategia</item>
+        <item>MOBA</item>
+        <item>Survival horror</item>
+    </string-array>
+
+    <string-array name="generos_values">
+        <item>Action RPG</item>
+        <item>RPG</item>
+        <item>Plataformas</item>
+        <item>Estrategia</item>
+        <item>MOBA</item>
+        <item>Survival horror</item>
+    </string-array>
+</resources>

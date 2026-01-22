@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Preferencias1">
+        <CheckBoxPreference
+            android:key="chk_gustar"
+            android:title="Le gustan los videojuegos?"
+            android:summary="Check box para saber si al usuario le gustan los videojuegos"
+            android:defaultValue="true" />
+        <SwitchPreferenceCompat
+            android:key="switch_gustar"
+            android:title="Pero le gustan de verdad?"
+            android:summary="Switch para saber si al usuario le gustan los videojuegos de verdad"
+            android:defaultValue="true" />
+        <SeekBarPreference
+            android:key="seekbar_gustar"
+            android:title="Cuanto le gustan?"
+            android:min="0"
+            android:max="100"
+            android:defaultValue="50" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Preferencias2">
+        <EditTextPreference
+            android:key="juego"
+            android:title="Juego favorito"
+            android:summary="Su juego favorito"/>
+        <EditTextPreference
+            android:key="estudio"
+            android:title="Estudio desarrollador"
+            android:summary="Estudio que desarrollo el juego"/>
+        <ListPreference
+            android:key="genero"
+            android:title="Genero favorito"
+            android:entries="@array/generos"
+            android:entryValues="@array/generos_values"
+            android:defaultValue="Action RPG"/>
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>
